@@ -7,17 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Simple editor</title>
     <meta name="description" content="Description" />
-
-    <meta property="og:title" content="" />
-
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <h1>Hello world</h1>
+    <main class="main">
+        <h1 class="header">My simple editor</h1>
 
+        <form class="form">
+            <label class="editor__label" for="message">Your message</label>
+            <p>
+                <textarea id="message" class="form__message form__message--js"></textarea>
+            </p>
+            <div class="form__actions">
+                <button class="form__button form__button--load form__button--load--js">load</button>
+                <button class="form__button form__button--save form__button--save--js">save</button>
+            </div>
+        </form>
+    </main>
     <script src="js/main.js"></script>
 </body>
 
