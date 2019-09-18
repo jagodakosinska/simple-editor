@@ -358,13 +358,26 @@ body {
   padding: 1rem;
   min-width: 12.5rem;
   font-weight: 600;
-  letter-spacing: 0.10rem; }
+  letter-spacing: 0.10rem;
+  -webkit-transition: background .3s linear, -webkit-transform .3s ease-in-out;
+  transition: background .3s linear, -webkit-transform .3s ease-in-out;
+  -o-transition: background .3s linear, transform .3s ease-in-out;
+  transition: background .3s linear, transform .3s ease-in-out;
+  transition: background .3s linear, transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+  .form__button:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
   .form__button--load {
     color: black;
-    background: #D3d4d8; }
+    background: white; }
+    .form__button--load:hover {
+      background: #828385; }
   .form__button--save {
     background: #121232;
     color: white; }
+    .form__button--save:hover {
+      background: #828385; }
 
 .form__label {
   font-size: 1rem;
