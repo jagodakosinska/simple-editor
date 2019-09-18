@@ -43,13 +43,23 @@ body {
         min-width: 12.5rem;
         font-weight: 600;
         letter-spacing: 0.10rem;
+        transition: background .3s linear, transform .3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
         &--load {
             color: black;
-            background: #D3d4d8;
+            background: white;
+            &:hover {
+                background: rgb(130, 131, 133)
+            }
         }
         &--save {
             background: #121232;
             color: white;
+            &:hover {
+                background: rgb(130, 131, 133)
+            }
         }
     }
     &__label {
